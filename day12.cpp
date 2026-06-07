@@ -90,22 +90,22 @@ int main(){
    return 0;
 } 
 
-// remove repetitive element
-vector<int> v={1,2,2,3,1,9,8,7,9,7,8};
-vector<int> v1;
-sort(v.begin(),v.end());
-for(int i = 0 ; i < v.size() ; i++){
-    if(v[i] != v[i+1]){
-        v1.push_back(v[i]);
+// Q4.remove repetitive element
+   vector<int> v={1,2,2,3,1,9,8,7,9,7,8};
+   vector<int> v1;
+   sort(v.begin(),v.end());
+   for(int i = 0 ; i < v.size() ; i++){
+        if(v[i] != v[i+1]){
+           v1.push_back(v[i]);
+        }
+        else{
+            continue;
+        }
     }
-    else{
-        continue;
+    for(int i = 0 ; i < v1.size() ; i++){
+        cout << v1[i] << " ";
     }
-}
-for(int i = 0 ; i < v1.size() ; i++){
-    cout << v1[i] << " ";
-}
-return 0;
+   return 0;
 }
 
 
