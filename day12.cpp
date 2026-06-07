@@ -67,3 +67,48 @@ int main(){
 
 
 
+// Q3.two sum
+   vector<int> v = {11,4,7,1,9};
+   int avail = 0;
+   int target = 32;
+   for(int i = 0 ; i< v.size();i++){
+    for(int j = i+1 ; j <v.size() ; j++){
+        int sum = 0;
+        sum += v[i] + v[j];
+        if(sum == target){
+            cout << v[i] << "," << v[j] << endl; 
+            avail = 1;
+        }
+    }
+   }
+   if(avail == 1){
+        cout << "\n element pair found";
+   }
+   else{
+       cout << "\n element pair not found"; 
+   }
+   return 0;
+} 
+
+// remove repetitive element
+vector<int> v={1,2,2,3,1,9,8,7,9,7,8};
+vector<int> v1;
+sort(v.begin(),v.end());
+for(int i = 0 ; i < v.size() ; i++){
+    if(v[i] != v[i+1]){
+        v1.push_back(v[i]);
+    }
+    else{
+        continue;
+    }
+}
+for(int i = 0 ; i < v1.size() ; i++){
+    cout << v1[i] << " ";
+}
+return 0;
+}
+
+
+
+
+
