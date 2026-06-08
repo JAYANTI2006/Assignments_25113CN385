@@ -46,25 +46,7 @@ int main() {
 }
 
 
-
-// Q 4 .power
-
-    int x, n;
-    cout << "Enter x and n: ";
-    cin >> x >> n;
-
-    int power = 1;
-
-    for(int i = 1; i <= n; i++) {
-        power *= x;
-    }
-
-    cout << x << "^" << n << " = " << power;
-
-    return 0;
-}
-
-// count set bits
+//Q-3. count set bits
     vector<int> bin;
 
     int num;
@@ -91,5 +73,23 @@ int main() {
 
     return 0;
 }
+
+// Q 4 .power
+
+    int x, n;
+    cout << "Enter x and n: ";
+    cin >> x >> n;
+
+    int power = 1;
+
+    for(int i = 1; i <= n; i++) {
+        power *= x;
+    }
+
+    cout << x << "^" << n << " = " << power;
+
+    return 0;
+}
+
 
    
