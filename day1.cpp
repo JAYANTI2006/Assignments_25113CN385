@@ -54,5 +54,19 @@ int main(){
    return 0;
 }
 
+// program to count no of digits
+    int num;
+    cout << " enter a number = ";
+    cin >> num;
+    int len = 0;
+    while(num > 0){
+        num /= 10;
+        len++;
+    }
+    cout << " length = " << len;
+    return 0;
+}   
+
+
 
 
