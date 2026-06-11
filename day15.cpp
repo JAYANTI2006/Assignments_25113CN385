@@ -47,3 +47,34 @@ int main() {
     return 0;
 }
 
+
+// shifting all zeroes to the end
+    vector<int> v = {5, 12, 3, 0, 0, 0};
+    int k = 0;
+    for(int i = 0 ; i < v.size(); i++){
+        if(v[i] == 0){
+            k++;
+        }
+    }
+    
+    while(k > 0){
+        for(int i = 0 ; i < v.size()- 1; i++){
+            if(v[i] == 0 ){
+                if(v[i+1] != 0){
+                    swap(v[i],v[i+1]);
+                }
+           }  
+        
+        }
+        k--;
+    }    
+        
+        for(int val : v){
+            cout << val << " ";
+        }
+        
+    
+    return 0;
+}
+
+   
