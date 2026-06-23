@@ -88,12 +88,6 @@ int main()
 
 //UNION OF ARRAYS
 
-#include <iostream>
-#include <unordered_set>
-
-using namespace std;
-
-int main() {
     int arr[] = {1, 3, 4, 5, 5, 1, 2, 4, 4};
     int arr1[] = {1, 2, 2, 23, 7, 7, 4, 5};
     unordered_set<int> ans;
