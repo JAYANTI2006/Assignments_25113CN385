@@ -113,14 +113,20 @@ int main (){
     }
     return 0;
 } 
-    
-    
 
 
-   
-    
-    
 
+//COLUMN SUM
 
-   
+        int arr[34][56] = {{1, 2, 3}, {4 ,5,6 },{7,43,56}};
+        int order = 3;
+        for(int i = 0 ; i < order ; i++){
+            int sum = 0;
+            for(int j = 0 ; j < order ; j++){
+                sum += arr[j][i];
+            }
+            cout << "colum" << i << " sum = " << sum << endl; 
 
+        }
+        return 0;
+    }     
