@@ -41,6 +41,8 @@ int main(){
     return 0;
 } 
 
+
+
 // SUBTRACTION OF MATRICES
 
     int arr[34][56] = {{1, 2, 3}, {4 ,5,6 },{7,43,56}};
@@ -80,3 +82,58 @@ int main(){
 
     return 0;
 } 
+
+
+
+//TRANSPOSE
+
+    int arr[34][56] = {{1, 2, 3}, {4 ,5,6 },{7,43,56}};
+    
+    int TRANSPOSE[45][45];
+    
+    int order_arr = 3;
+    
+
+   
+       
+    for(int i = 0 ; i < order_arr ; i++){
+        for(int j = 0 ; j< order_arr ; j++){
+            TRANSPOSE[i][j] = arr[j][i];
+            }
+        }
+    cout << "["; 
+
+    for(int i = 0 ; i < order_arr ; i++){
+        for(int j = 0 ; j < order_arr ; j++){
+
+            cout <<  TRANSPOSE[i][j] << " ";
+        }
+        cout << endl;
+    }
+    cout << "]";
+
+    return 0;
+} 
+
+//sum of diagonal elemnts
+
+    int arr[34][56] = {{1, 2, 3}, {4 ,5,6 },{7,43,56}};
+    int order_arr = 3;
+    int sum = 0;
+    
+    for(int i = 0 ; i < order_arr ; i++){
+        for(int j = 0 ; j< order_arr ; j++){
+
+            if(i == j){
+                sum += arr[i][j] ;
+            }
+        }
+    }
+
+    cout << " sum of diagonal elements = " << sum; 
+
+    return 0;
+} 
+
+
+   
