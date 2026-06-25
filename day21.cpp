@@ -1,4 +1,6 @@
 #include <iostream>
+#include <vector>
+#include <algorithm>
 using namespace std;
 int main (){
   // LENGTH OF A STRING
@@ -10,6 +12,21 @@ int main (){
         i++;
     }
     cout << " count of letters  = " << count;
+    return 0;
+} 
+
+
+//REVERSE OF A STRING
+
+    vector<string> str = {"h","e","l","l","o"};
+    reverse(str.begin(),str.end());
+
+    for(auto val : str){
+
+        cout << val << " ";
+
+    }
+    
     return 0;
 } 
 
