@@ -68,10 +68,59 @@ int main (){
     }
     cout << "]";
     return 0;
-}    
+} 
+
+
+
+
+//SYMMETRIC MATRIX 
+
+ int arr[34][56] = {{1, 2, 3}, {4 ,5,6 },{7,43,56}};
+    
+    int TRANSPOSE[45][45];
+    
+    int order_arr = 3;
+    bool transpose = true;
+
+    //finding the transpose
+
+    for(int i = 0 ; i < order_arr ; i++){
+        for(int j = 0 ; j< order_arr ; j++){
+            TRANSPOSE[i][j] = arr[j][i];
+            }
+    }
+
+    //check'in if its symmetric
+
+    for(int i = 0 ; i < order_arr ; i++){
+        for(int j = 0 ; j< order_arr ; j++){
+            if(TRANSPOSE[i][j] != arr[i][j]){
+                transpose = false;
+                break;
+            }
+        }
+        if(!transpose){
+            break;
+        }
+    }    
+
+
+    if(transpose == true){
+        cout << " symmetric matrix";
+    }
+    else{
+        cout << " unsymmetric matrix";
+    }
+    return 0;
+} 
     
     
 
 
    
-}
+    
+    
+
+
+   
+
