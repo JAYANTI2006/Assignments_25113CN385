@@ -115,7 +115,9 @@ int main(){
     return 0;
 } 
 
-//sum of diagonal elemnts
+
+
+//SUM OF DIAGONAL ELMENTS
 
     int arr[34][56] = {{1, 2, 3}, {4 ,5,6 },{7,43,56}};
     int order_arr = 3;
