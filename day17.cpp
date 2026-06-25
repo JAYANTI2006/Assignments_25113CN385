@@ -163,5 +163,64 @@ int main()
     return 0;
 }
 
+// find common elements
+
+int arr[] = {1, 3, 4, 5, 5, 1, 2, 4, 4,4,2};
+    int arr1[] = {1, 2, 2, 23, 7, 7, 4, 5,4};
+    vector<int> ans;
+
+    int len1 = sizeof(arr) / sizeof(arr[0]);
+    int len2 = sizeof(arr1) / sizeof(arr1[0]);
+    int small_len;
+    int larg_len;
+
+
+
+    int *dummy_arr;
+    int *dummy1_arr;
+
+
+    if (len1 == len2) {
+        small_len = len1;
+        larg_len = len2;
+
+        dummy_arr = arr;
+        dummy1_arr = arr1;
+
+    } 
+    else {
+        small_len = (len1 > len2 ? len2 : len1);
+        larg_len = (len1 > len2 ? len1 : len2);
+
+        dummy_arr = (len1 < len2 ? arr : arr1);
+        dummy1_arr = (len1 < len2 ? arr1 : arr);
+
+    }    
+
+    vector<bool> v(larg_len,false);
+
+
+    for (int i = 0; i < small_len; i++) {
+        for (int j = 0; j < larg_len; j++) {
+            if (dummy_arr[i] == dummy1_arr[j]) {
+                   
+                   ans.push_back(dummy_arr[i]);
+                   v[j] = true;
+                   break;
+
+
+            }
+        }
+    }
+    
+
+    for (size_t i = 0; i < ans.size(); i++) {
+         cout << ans[i] << " ";
+     }
+    cout << endl;
+    return 0;
+}
+
+
 
 
