@@ -50,3 +50,38 @@ for(int i = 0; i < len ; i++){
     }
     return 0;
 } 
+
+// binary search
+int arr[] = { 5, 6 , 7 , 9 ,3 ,2 ,1};
+int len = sizeof(arr)/sizeof(arr[0]);
+
+int low = 0;
+int high = len - 1;
+
+int key;
+cout << "key = ";
+cin >> key;
+bool found = false;
+
+
+while(low < high){
+    int mid = (high - low)/2;
+
+    if(arr[mid] == key){
+        found = true;
+        cout << " element found at index = " << mid;
+        break;
+
+    }
+    else if(arr[mid]> key){
+        high = mid - 1;
+    }
+    else if(arr[mid] < key){
+        low = mid + 1;
+    }
+}
+
+return 0;
+}
+
+
