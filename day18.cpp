@@ -1,6 +1,7 @@
 
 #include <iostream> 
 #include <vector>
+#include <algorithm>
 
 using namespace std;
 
@@ -52,19 +53,19 @@ for(int i = 0; i < len ; i++){
 } 
 
 // binary search
-int arr[] = { 5, 6 , 7 , 9 ,3 ,2 ,1};
-int len = sizeof(arr)/sizeof(arr[0]);
+  int arr[] = { 5, 6 , 7 , 9 ,3 ,2 ,1};
+  int len = sizeof(arr)/sizeof(arr[0]);
 
-int low = 0;
-int high = len - 1;
+  int low = 0;
+  int high = len - 1;
 
-int key;
-cout << "key = ";
-cin >> key;
-bool found = false;
+  int key;
+  cout << "key = ";
+  cin >> key;
+  bool found = false;
 
 
-while(low < high){
+  while(low < high){
     int mid = (high - low)/2;
 
     if(arr[mid] == key){
@@ -79,9 +80,19 @@ while(low < high){
     else if(arr[mid] < key){
         low = mid + 1;
     }
+  }
+
+  return 0;
 }
 
-return 0;
-}
+//sort in descending order
+   vector<int> v = {1,2,3,4,5,6,7};
+   sort(v.begin(),v.end(),greater<int>());
+   for(int val : v){
+    cout << val << " ";
+   }
+   return 0;
+}   
+
 
 
