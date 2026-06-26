@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include <cctype>
 using namespace std;
 int main (){
   // LENGTH OF A STRING
