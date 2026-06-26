@@ -35,4 +35,20 @@ https://github.com/JAYANTI2006/Assignments_25113CN385/blob/week_2/day14.cpp
 
 week_3
 
+https://github.com/JAYANTI2006/Assignments_25113CN385/blob/week_3/day15.cpp
+
+https://github.com/JAYANTI2006/Assignments_25113CN385/blob/week_3/day16.cpp
+
+https://github.com/JAYANTI2006/Assignments_25113CN385/blob/week_3/day17.cpp
+
+https://github.com/JAYANTI2006/Assignments_25113CN385/blob/week_3/day18.cpp
+
+https://github.com/JAYANTI2006/Assignments_25113CN385/blob/week_3/day19.cpp
+
+https://github.com/JAYANTI2006/Assignments_25113CN385/blob/week_3/day20.cpp
+
+https://github.com/JAYANTI2006/Assignments_25113CN385/blob/week_3/day21.cpp
+
+https://github.com/JAYANTI2006/Assignments_25113CN385/blob/week_3/day22.cpp
+
 week_4
