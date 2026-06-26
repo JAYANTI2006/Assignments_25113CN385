@@ -59,4 +59,21 @@ int main(){
     return 0;
 }   
 
+//FREQUENCY OF EACH LETTER
+
+ char str[] = "ddpppjjjkkkkn";
+   unordered_map<char,int> frequency;
+
+   for(auto it : str){
+
+    frequency[it]++;
+
+   }
+   for(auto it : frequency){
+    cout << it.first << "-->" << it.second;
+    cout << endl;
+   }
+   return 0;
+}   
+
 }
