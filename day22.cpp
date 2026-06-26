@@ -77,5 +77,32 @@ int main(){
     cout << it.first << "-->" << it.second;
     cout << endl;
    }
+
+// REMOVING SPACES
+    char str[] = "knowledge comes at a cost";
+    char str1[100];
+    int i = 0;
+    int j=0;
+    while(str[i] != '\0'){
+        if(str[i] == ' '){
+            i++;
+            continue;
+        }
+        else{
+            str1[j] = str[i];
+        }
+        i++;  
+        j++;  
+    }
+    str1[j] = '\0'; 
+    i=0;
+    while(str1[i] != '\0'){
+        std::cout << str1[i];
+        i++;
+    }
+    return 0;
+}
+
+
    return 0;
 }   
