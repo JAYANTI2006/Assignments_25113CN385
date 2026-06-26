@@ -35,4 +35,28 @@ int main(){
    return 0;
 }   
 
+// NO OF WORDS IN A SENTENCE
+
+    char str[] = "  HI JOHN, LONG TIME NO SEE. WHAT'S GOING ON BRUH";
+    int i = 0;
+    int len = strlen(str);
+
+    if(len == 0){
+        std::cout << " empty string";
+        return 1;
+    }
+    
+    int count_words = 0;
+    while(str[i] != '\0'){
+
+        if(str[i] != ' ' && (str[i+1] == ' ' || str[i] == '\0') ){
+            count_words++;
+        }
+        i++;
+
+    }
+    std::cout << " number of words in the given snetence = " << count_words;
+    return 0;
+}   
+
 }
