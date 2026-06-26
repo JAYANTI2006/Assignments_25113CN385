@@ -31,6 +31,41 @@ int main (){
     return 0;
 } 
 
+
+// NO OF VOWEL AND CONSONANT
+//NO NAMESPACE 
+
+
+   char str[] = "hello uncle john!";
+   int count_vowel = 0;
+   int count_consonant= 0;
+
+   int len = strlen(str);
+
+   for(int i = 0 ; i < len ; i++){
+
+    char ch = tolower(str[i]);
+
+    if(ch == 'a'||
+    ch == 'e'|| ch =='i' ||
+    ch == 'o' || ch=='u'){
+        count_vowel++;
+    }
+
+    else if(isalpha(ch)){
+        count_consonant++;
+    }
+
+   } 
+
+   std::cout << " numner of vowels = " << count_vowel;
+   std::cout << " number of consonents = " << count_consonant;
+
+   return 0;
+
+    
+}
+
 //LOWER TO UPPER CASE
 
      string str = "hello";
