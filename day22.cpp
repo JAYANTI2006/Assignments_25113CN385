@@ -66,6 +66,10 @@ int main(){
 
    for(auto it : str){
 
+     if(it == '\0'){
+       continue;
+     }
+
     frequency[it]++;
 
    }
