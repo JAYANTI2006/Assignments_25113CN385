@@ -30,3 +30,11 @@ int main (){
     return 0;
 } 
 
+//LOWER TO UPPER CASE
+
+     string str = "hello";
+     transform(str.begin(),str.end(), str.begin() ,(int(*)(int))toupper);
+     cout << str;
+     return 0;
+}  
+
