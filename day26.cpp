@@ -20,6 +20,8 @@ int main() {
     else {
         cout << "Too High";
     }
+    return 0;
+}  
 
 
 
@@ -36,7 +38,8 @@ int main() {
     else {
         cout << "Not Eligible for Voting";
     }
-
+    return 0;
+}
 
 
     // Q103. Create ATM Simulation
@@ -70,6 +73,8 @@ int main() {
             cout << "Insufficient Balance";
         }
     }
+    return 0;
+}
 
 
 
